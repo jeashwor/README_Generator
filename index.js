@@ -1,9 +1,10 @@
 // indicate npm modules needed for code base.
 var inquirer = require("inquirer");
 var fs = require('fs');
+const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = ["What is your project title?", "Write a brief project description.", "List instructions for install of this application. (For multiple steps separate statements by commas)", "Describe usage information.", "Describe any contribution guidelines necessary for use of application.", "List test instructions for user as necessary. (For multiple steps separate statements by commas)", "Choose license to represent application.", , "Enter your github username", "Enter your email address."];
+const questions = ["What is your project title?", "Write a brief project description.", "List instructions for install of this application. (For multiple steps separate statements by commas)", "Describe usage information.", "Describe any contribution guidelines necessary for use of application.", "List test instructions for user as necessary. (For multiple steps separate statements by commas)", "Choose license to represent application.", , "Enter your github username", "Enter your email address.", "File path for project screen shot. (ex. ./assets/screenshot.png)"];
 
 const licenseChoices = ["MIT", "Apache-2.0", "GNU GPLv3", "GNU AGPLv3"];
 
@@ -15,6 +16,11 @@ let licenseText = "";
 
 // function to write README file
 function writeToFile(fileName, data) {
+    const markDownContent = generateMarkdown(data);
+    fs.writeFile(fileName, markDownContent, (err) => {
+        if (err) throw err;
+        console.log("File has been saved!");
+    });
 };
 
 // function to initialize program
@@ -74,6 +80,9 @@ function init() {
                 // Validate correct email format if you have time.
             }
         ])
+        .then(function (data) {
+            writeToFile("README.md", data);
+        });
 };
 
 // function call to initialize program

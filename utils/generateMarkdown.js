@@ -35,20 +35,17 @@ function generateMarkdown(data) {
 
   ### Contributing
 
-  ${contributionGuidelines}
+  ${data.contributionGuidelines}
 
   ### Test
 
-  ${testInstructions}
+  ${data.testInstructions}
 
   ### Questions
 
   GitHub Username: [${data.userName}](https://github.com/${data.userName})
 
   If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
-
-
-
 `;
 }
 
