@@ -1,3 +1,7 @@
+// indicate npm modules needed for code base.
+var inquirer = require("inquirer");
+var fs = require('fs');
+
 // array of questions for user
 const questions = [
     {
@@ -31,9 +35,25 @@ const questions = [
         message: "List test instructions for user as necessary. (For multiple steps separate statements by commas)"
     },
     {
-        type:
-        name:
-        message:
+        type: "list",
+        name: "license",
+        message: "Choose license to represent application.",
+        choices: [
+            "MIT",
+            "Apache-2.0",
+            "GNU GPLv3",
+            "GNU AGPLv3",
+        ]
+    },
+    {
+        type: "input",
+        name: "userName",
+        message: "Enter your github username"
+    },
+    {
+        type: "input",
+        name: "userEmail",
+        message: "Enter your email address."
     }
 ];
 
