@@ -1,6 +1,6 @@
 # undefined
 
-  adfd
+  Testing descrition
   
   *place screen shot here*
   
@@ -21,11 +21,11 @@
   
   ### Installation Instructions
 
-  qwerqwer
+  First do this, then do this, then this
 
   ### Usage Instructions
 
-  qwer
+  Made to generate readme file from conmmand line
 
   ### License
 
@@ -33,14 +33,14 @@
 
   ### Contributing
 
-  qwer
+  used NPM modules fs, inquirer.
 
   ### Test
 
-  qwerqwer
+  NPM init, then NPM install
 
   ### Questions
 
-  GitHub Username: [qewr](https://github.com/qewr)
+  GitHub Username: [jeashwor](https://github.com/jeashwor)
 
-  If you have additional questions please email me at that following link.  [Email Me!](qwer)
+  If you have additional questions please email me at that following link.  [Email Me!](jeashwor@gmail.com)

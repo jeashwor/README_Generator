@@ -4,11 +4,12 @@ var fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = ["What is your project title?", "Write a brief project description.", "List instructions for install of this application. (For multiple steps separate statements by commas)", "Describe usage information.", "Describe any contribution guidelines necessary for use of application.", "List test instructions for user as necessary. (For multiple steps separate statements by commas)", "Choose license to represent application.", , "Enter your github username", "Enter your email address.", "File path for project screen shot. (ex. ./assets/screenshot.png)"];
+const questions = ["What is your project title?", "Write a brief project description.", "List instructions for install of this application. (For multiple steps separate statements by commas)", "Describe usage information.", "Describe any contribution guidelines necessary for use of application.", "List test instructions for user as necessary. (For multiple steps separate statements by commas)", "Choose license to represent application.", "Enter your github username", "Enter your email address.", "File path for project screen shot. (ex. ./assets/screenshot.png)"];
 
 const licenseChoices = ["MIT", "Apache-2.0", "GNU GPLv3", "GNU AGPLv3"];
 
 const fileName = "README.md";
+const defaultMessage = "You will need to come back to this later for a professional looking README.md!";
 
 // const to store license choice results
 let userLicenseChoice = "";
@@ -29,33 +30,39 @@ function init() {
         .prompt([
             {
                 type: "input",
-                name: "projectTitle",
-                message: questions[0]
+                name: "title",
+                message: questions[0],
+                default: defaultMessage
             },
             {
                 type: "input",
                 name: "description",
-                message: questions[1]
+                message: questions[1],
+                default: defaultMessage
             },
             {
                 type: "input",
                 name: "installInstructions",
-                message: questions[2]
+                message: questions[2],
+                default: defaultMessage
             },
             {
                 type: "input",
                 name: "usageInfo",
-                message: questions[3]
+                message: questions[3],
+                default: defaultMessage
             },
             {
                 type: "input",
                 name: "contributionGuidelines",
-                message: questions[4]
+                message: questions[4],
+                default: defaultMessage
             },
             {
                 type: "input",
                 name: "testInstructions",
-                message: questions[5]
+                message: questions[5],
+                default: defaultMessage
             },
             {
                 type: "list",
