@@ -71,13 +71,18 @@ function init() {
             {
                 type: "input",
                 name: "userName",
-                message: "Enter your github username"
+                message: questions[7]
             },
             {
                 type: "input",
                 name: "userEmail",
-                message: "Enter your email address."
+                message: questions[8]
                 // Validate correct email format if you have time.
+            },
+            {
+                type: "input",
+                name: "screenShot",
+                message: questions[9]
             }
         ])
         .then(function (data) {
