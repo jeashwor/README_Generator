@@ -15,6 +15,11 @@ const defaultMessage = "You will need to come back to this later for a professio
 let userLicenseChoice = "";
 let licenseText = "";
 
+// // function to break instructions into list element for markdown
+// const makeList = (arr) => {
+//     arr.
+// };
+
 // function to write README file
 function writeToFile(fileName, data) {
     const markDownContent = generateMarkdown(data);
@@ -78,7 +83,8 @@ function init() {
             {
                 type: "input",
                 name: "userName",
-                message: questions[7]
+                message: questions[7],
+                default: defaultMessage
             },
             {
                 type: "input",
@@ -93,6 +99,11 @@ function init() {
             }
         ])
         .then(function (data) {
+            // // store data strings with requested comma separators as an array.
+            // const instructionArr = data.installInstructions.replace(/, /g, "\n");
+            // console.log(instructionArr);
+            // const testArr = data.testInstructions.replace(/, /g, "\n");
+            // console.log(testArr);
             writeToFile("README.md", data);
         });
 };

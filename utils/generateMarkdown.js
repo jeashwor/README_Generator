@@ -8,22 +8,22 @@ function generateMarkdown(data) {
   
   ### Table of Contents
   
-  [Installation](installation-instructions)
+  * [Installation](installation-instructions)
   
-  [Usage](#usage-instructions)
+  * [Usage](#usage-instructions)
   
-  [License](#license)
+  * [License](#license)
   
-  [Contributing](#contributing)
+  * [Contributing](#contributing)
   
-  [Test](#test-instructions)
+  * [Test](#test-instructions)
   
-  [Questions](#questions)
+  * [Questions](#questions)
   
   
   ### Installation Instructions
 
-  ${data.installInstructions}
+  * ${data.installInstructions.replace(/, /g, "\n * ")}
 
   ### Usage Instructions
 
@@ -39,7 +39,7 @@ function generateMarkdown(data) {
 
   ### Test
 
-  ${data.testInstructions}
+  * ${data.testInstructions.replace(/, /g, "\n * ")}
 
   ### Questions
 

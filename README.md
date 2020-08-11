@@ -1,6 +1,6 @@
-# undefined
+# You will need to come back to this later for a professional looking README.md!
 
-  Testing descrition
+  You will need to come back to this later for a professional looking README.md!
   
   *place screen shot here*
   
@@ -21,11 +21,13 @@
   
   ### Installation Instructions
 
-  First do this, then do this, then this
+  * test 1
+ * test 2
+ * test 3
 
   ### Usage Instructions
 
-  Made to generate readme file from conmmand line
+  You will need to come back to this later for a professional looking README.md!
 
   ### License
 
@@ -33,14 +35,14 @@
 
   ### Contributing
 
-  used NPM modules fs, inquirer.
+  You will need to come back to this later for a professional looking README.md!
 
   ### Test
 
-  NPM init, then NPM install
+  You will need to come back to this later for a professional looking README.md!
 
   ### Questions
 
-  GitHub Username: [jeashwor](https://github.com/jeashwor)
+  GitHub Username: [You will need to come back to this later for a professional looking README.md!](https://github.com/You will need to come back to this later for a professional looking README.md!)
 
-  If you have additional questions please email me at that following link.  [Email Me!](jeashwor@gmail.com)
+  If you have additional questions please email me at that following link.  [Email Me!]()
