@@ -4,9 +4,66 @@ var fs = require('fs');
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
-const questions = ["What is your project title?", "Write a brief project description.", "List instructions for install of this application. (For multiple steps separate statements by commas)", "Describe usage information.", "Describe any contribution guidelines necessary for use of application.", "List test instructions for user as necessary. (For multiple steps separate statements by commas)", "Choose license to represent application.", "Enter your github username", "Enter your email address.", "File path for project screen shot. (ex. ./assets/screenshot.png)"];
+const questions = [
+    {
+        type: "input",
+        name: "title",
+        message: "What is your project title?",
+    },
+    {
+        type: "input",
+        name: "description",
+        message: "Write a brief project description.",
+    },
+    {
+        type: "input",
+        name: "installInstructions",
+        message: "List instructions for install of this application. (For multiple steps separate statements by commas)",
+    },
+    {
+        type: "input",
+        name: "usageInfo",
+        message: "Provide instructions and examples for use.",
+    },
+    {
+        type: "input",
+        name: "contributionGuidelines",
+        message: "Describe any contribution guidelines necessary for use of your application.",
+    },
+    {
+        type: "input",
+        name: "testInstructions",
+        message: "List out any test created for this application and how to run them. (For multiple steps separate statements by commas)",
+    },
+    {
+        type: "list",
+        name: "license",
+        message: "Choose license to represent application.",
+        choices: [
+            "MIT",
+            "Apache-2.0",
+            "GNU GPLv3",
+            "GNU AGPLv3",
+        ]
+    },
+    {
+        type: "input",
+        name: "userName",
+        message: "Enter your github username",
+    },
+    {
+        type: "input",
+        name: "userEmail",
+        message: "Enter your email address."
+        // Validate correct email format if you have time.
+    },
+    {
+        type: "input",
+        name: "screenShot",
+        message: "File path for project screen shot. (ex. ./assets/screenshot.png)"
+    }
+]
 
-const licenseChoices = ["MIT", "Apache-2.0", "GNU GPLv3", "GNU AGPLv3"];
 
 const fileName = "README.md";
 const defaultMessage = "You will need to come back to this later for a professional looking README.md!";
@@ -15,10 +72,6 @@ const defaultMessage = "You will need to come back to this later for a professio
 let userLicenseChoice = "";
 let licenseText = "";
 
-// // function to break instructions into list element for markdown
-// const makeList = (arr) => {
-//     arr.
-// };
 
 // function to write README file
 function writeToFile(fileName, data) {
@@ -32,78 +85,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 function init() {
     inquirer
-        .prompt([
-            {
-                type: "input",
-                name: "title",
-                message: questions[0],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "description",
-                message: questions[1],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "installInstructions",
-                message: questions[2],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "usageInfo",
-                message: questions[3],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "contributionGuidelines",
-                message: questions[4],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "testInstructions",
-                message: questions[5],
-                default: defaultMessage
-            },
-            {
-                type: "list",
-                name: "license",
-                message: questions[6],
-                choices: [
-                    licenseChoices[0],
-                    licenseChoices[1],
-                    licenseChoices[2],
-                    licenseChoices[3],
-                ]
-            },
-            {
-                type: "input",
-                name: "userName",
-                message: questions[7],
-                default: defaultMessage
-            },
-            {
-                type: "input",
-                name: "userEmail",
-                message: questions[8]
-                // Validate correct email format if you have time.
-            },
-            {
-                type: "input",
-                name: "screenShot",
-                message: questions[9]
-            }
-        ])
+        .prompt(questions)
         .then(function (data) {
-            // // store data strings with requested comma separators as an array.
-            // const instructionArr = data.installInstructions.replace(/, /g, "\n");
-            // console.log(instructionArr);
-            // const testArr = data.testInstructions.replace(/, /g, "\n");
-            // console.log(testArr);
             writeToFile("README.md", data);
         });
 };

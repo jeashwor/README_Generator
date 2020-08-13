@@ -2,50 +2,50 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${data.description}
+${data.description}
   
-  *place screen shot here*
+*place screen shot here*
   
-  ### Table of Contents
+### Table of Contents
   
-  * [Installation](installation-instructions)
+* [Installation](installation-instructions)
   
-  * [Usage](#usage-instructions)
+* [Usage](#usage-instructions)
   
-  * [License](#license)
+* [License](#license)
   
-  * [Contributing](#contributing)
+* [Contributing](#contributing)
   
-  * [Test](#test-instructions)
+* [Test](#test-instructions)
   
-  * [Questions](#questions)
+* [Questions](#questions)
   
   
-  ### Installation Instructions
+### Installation Instructions
 
-  * ${data.installInstructions.replace(/, /g, "\n * ")}
+* ${data.installInstructions.replace(/, /g, "\n * ")}
 
-  ### Usage Instructions
+### Usage Instructions
 
-  ${data.usageInfo}
+${data.usageInfo}
 
-  ### License
+### License
 
 
 
-  ### Contributing
+### Contributing
 
-  ${data.contributionGuidelines}
+${data.contributionGuidelines}
 
-  ### Test
+### Test
 
-  * ${data.testInstructions.replace(/, /g, "\n * ")}
+* ${data.testInstructions.replace(/, /g, "\n * ")}
 
-  ### Questions
+### Questions
 
-  GitHub Username: [${data.userName}](https://github.com/${data.userName})
+GitHub Username: [${data.userName}](https://github.com/${data.userName})
 
-  If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
+If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
 `;
 }
 

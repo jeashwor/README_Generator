@@ -1,48 +1,48 @@
-# You will need to come back to this later for a professional looking README.md!
+# ReadMe Generator
 
-  You will need to come back to this later for a professional looking README.md!
+CLI based program to quickly generate professionl README.md
   
-  *place screen shot here*
+*place screen shot here*
   
-  ### Table of Contents
+### Table of Contents
   
-  [Installation](installation-instructions)
+* [Installation](installation-instructions)
   
-  [Usage](#usage-instructions)
+* [Usage](#usage-instructions)
   
-  [License](#license)
+* [License](#license)
   
-  [Contributing](#contributing)
+* [Contributing](#contributing)
   
-  [Test](#test-instructions)
+* [Test](#test-instructions)
   
-  [Questions](#questions)
+* [Questions](#questions)
   
   
-  ### Installation Instructions
+### Installation Instructions
 
-  * test 1
- * test 2
- * test 3
+* Using GitHub link clone repository into desired directory.
+ * Using your command terminal navigate to the chosen directory and run npm install to gather required modules.
+ * Once modules are installed run program using node index.js command from your terminal. 
 
-  ### Usage Instructions
+### Usage Instructions
 
-  You will need to come back to this later for a professional looking README.md!
+Answer questions as they are prompted.  File will be automaticaly generated. 
 
-  ### License
+### License
 
 
 
-  ### Contributing
+### Contributing
 
-  You will need to come back to this later for a professional looking README.md!
+Please contribute use of file for application.
 
-  ### Test
+### Test
 
-  You will need to come back to this later for a professional looking README.md!
+* No test were created for this excersise.
 
-  ### Questions
+### Questions
 
-  GitHub Username: [You will need to come back to this later for a professional looking README.md!](https://github.com/You will need to come back to this later for a professional looking README.md!)
+GitHub Username: [jeashwor](https://github.com/jeashwor)
 
-  If you have additional questions please email me at that following link.  [Email Me!]()
+If you have additional questions please email me at that following link.  [Email Me!](jeashwor@gmail.com)
