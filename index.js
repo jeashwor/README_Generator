@@ -60,20 +60,10 @@ const questions = [
         type: "input",
         name: "screenShot",
         message: "File path for project screen shot. (ex. ./assets/screenshot.png)"
-    },
-    {
-        type: "input",
-        name: "repository",
-        message: "Enter GitHub repository name."
     }
 ]
 
-
-const fileName = "README.md";
-const defaultMessage = "You will need to come back to this later for a professional looking README.md!";
-
-// const to store license choice results
-
+// function to generate license data based on license choice in prompt
 function generateLicense(data) {
     return new Promise(function (resolve, reject) {
         if (data.license === "MIT") {
@@ -99,7 +89,6 @@ function generateLicense(data) {
     })
 };
 
-
 // function to write README file
 function writeToFile(fileName, data) {
     const licenseBadge = "";
@@ -114,7 +103,7 @@ function writeToFile(fileName, data) {
         const markDownContent = generateMarkdown(data);
         fs.writeFile(fileName, markDownContent, (err) => {
             if (err) throw err;
-            console.log("File has been saved!");
+            console.log("Your README.md file has been saved!");
         });
 };
 
