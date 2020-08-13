@@ -50,7 +50,7 @@ const questions = [
     {
         type: "input",
         name: "userName",
-        message: "Enter your github username",
+        message: "Enter your github username.",
     },
     {
         type: "input",
