@@ -1,9 +1,9 @@
-# Title
-![license badge](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
+# Readme Generator
+![license badge](https://img.shields.io/badge/license-GNU_GPLv3-brightgreen)
 
 ## Description
   
-description
+Breif description
   
 ![screen shot](./utils/screenshot.png)
   
@@ -18,25 +18,25 @@ description
   
 ## Installation Instructions
 
-* step1 
-* step 2 
-* step 3
+* Step 1 
+* Step 2 
+* Step 3
 
 ## Usage Instructions
 
-Use by typing in node index.js
+Use the file as instructed
 
 ## License
 
-* Application licensed under Apache Version 2.0.  For more information see http://www.apache.org/licenses
+* Application licensed under General Public License Version 3.  For more information see https://www.gnu.org/licenses/gpl-3.0.html
 
 ## Contributing
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/)
 
 ## Test
 
-* no test
+* No test
 
 ## Questions
 
