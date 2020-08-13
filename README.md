@@ -1,9 +1,9 @@
-# README Generator
+# Title
 ![license badge](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
 
 ## Description
   
-Breif
+description
   
 ![screen shot](./utils/screenshot.png)
   
@@ -18,26 +18,25 @@ Breif
   
 ## Installation Instructions
 
-* Step 1
-* Step 2 
-* Step 3
+* step1 
+* step 2 
+* step 3
 
 ## Usage Instructions
 
-Here we our instructions
+Use by typing in node index.js
 
 ## License
 
-* Application licensed under General Public License Version 3.  For more information see https://www.gnu.org/licenses/gpl-3.0.html
+* Application licensed under Apache Version 2.0.  For more information see http://www.apache.org/licenses
 
 ## Contributing
 
-Contribute
-* Contribut 2
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 ## Test
 
-* No Test
+* no test
 
 ## Questions
 

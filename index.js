@@ -28,7 +28,8 @@ const questions = [
     {
         type: "input",
         name: "contributionGuidelines",
-        message: "Describe any contribution guidelines necessary for use of your application. (For multiple steps separate statements with a - followed by a space '- ')",
+        message: "Describe guidelines for how others can contribute to this project. (Hit enter to add Contributor Covenant v2.0 as default.)",
+        default: "[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/)"
     },
     {
         type: "input",
