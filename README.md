@@ -6,6 +6,7 @@
 A quick and easy command-line based application that will create a professional README file based on prompted user input.  The ultimate goal in this application is to reduce the time that one would spend structuring a proper README file for their repository, and more time doing the important task of writing code!
   
 ![screen shot](./utils/screenshot.png)
+
   
 ## Table of Contents
   
@@ -15,6 +16,7 @@ A quick and easy command-line based application that will create a professional 
 * [Contributing](#contributing)  
 * [Test](#test-instructions)  
 * [Questions](#questions)
+
   
 ## Installation Instructions
 
@@ -34,13 +36,20 @@ A quick and easy command-line based application that will create a professional 
 
 * You are now ready to run the application!
 
+
 ## Usage Instructions
 
-Use the file as instructed
+* Application can be called using your command line from the README_Generator file director using the command:
+```
+node index.js
+```
+* Answer questions that follow to generate new README.md file in the newFile folder in this directory. 
+
 
 ## License
 
 * Application licensed under MIT.  For more information see [license document](./utils/license.md).
+
 
 ## Contributing
 
@@ -48,12 +57,14 @@ Contributions to follow Contributor Covenant.  See below for more information.
 
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](https://www.contributor-covenant.org/)
 
+
 ## Test
 
 * No test were created in initial programming of application.  Further development will include implementation of TDD principals.  
 
+
 ## Questions
 
-Check out my GitHub page here:  [jeashwor](https://github.com/jeashwor)
+Check out my GitHub page here:  [jeashwor's Page](https://github.com/jeashwor)
 
 If you have additional questions please email me at jeashwor@gmail.com

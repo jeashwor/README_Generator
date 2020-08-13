@@ -6,9 +6,7 @@ return `# ${data.title}
 ## Description
   
 ${data.description}
-  
-![screen shot](${data.screenShot})
-  
+ 
 ## Table of Contents
   
 * [Installation](installation-instructions)  

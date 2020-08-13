@@ -56,11 +56,6 @@ const questions = [
         type: "input",
         name: "userEmail",
         message: "Enter your email address."
-    },
-    {
-        type: "input",
-        name: "screenShot",
-        message: "File path for project screen shot. (ex. ./assets/screenshot.png)"
     }
 ]
 
