@@ -1,11 +1,11 @@
 # README Generator
-![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
+![license badge](https://img.shields.io/badge/license-Apache_2.0-brightgreen)
 
 ## Description
   
-CLI based readme generator
+Breif
   
-![screen shot](.utils/screenshot.png)
+![screen shot](./utils/screenshot.png)
   
 ## Table of Contents
   
@@ -19,24 +19,25 @@ CLI based readme generator
 ## Installation Instructions
 
 * Step 1
-* step 2
-* step3
+* Step 2 
+* Step 3
 
 ## Usage Instructions
 
-Brief instructions
+Here we our instructions
 
 ## License
 
-* Application licensed under MIT.  For more information see https://opensource.org/licenses/MIT
+* Application licensed under General Public License Version 3.  For more information see https://www.gnu.org/licenses/gpl-3.0.html
 
 ## Contributing
 
-Please contribute
+Contribute
+* Contribut 2
 
 ## Test
 
-* No test
+* No Test
 
 ## Questions
 

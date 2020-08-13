@@ -71,15 +71,15 @@ function generateLicense(data) {
             licenseText = "Application licensed under MIT.  For more information see https://opensource.org/licenses/MIT";
             resolve(licenseBadge, licenseText);
         } else if (data.license === "Apache-2.0") {
-            licenseBadge = "https://img.shields.io/badge/license-Apache-2.0-brightgreen";
+            licenseBadge = "https://img.shields.io/badge/license-Apache_2.0-brightgreen";
             licenseText = "Application licensed under Apache Version 2.0.  For more information see http://www.apache.org/licenses";
             resolve(licenseBadge, licenseText);
         } else if (data.license === "GNU GPLv3") {
-            licenseBadge = "https://img.shields.io/badge/license-GNU GPLv3-brightgreen";
+            licenseBadge = "https://img.shields.io/badge/license-GNU_GPLv3-brightgreen";
             licenseText = "Application licensed under General Public License Version 3.  For more information see https://www.gnu.org/licenses/gpl-3.0.html";
             resolve(licenseBadge, licenseText);
         } else if (data.license === "GNU AGPLv3") {
-            licenseBadge = "https://img.shields.io/badge/license-GNU AGPLv3-brightgreen";
+            licenseBadge = "https://img.shields.io/badge/license-GNU_AGPLv3-brightgreen";
             licenseText = "Application licensed under AFFERO General Public License Version 3.  For more information see https://www.gnu.org/licenses/agpl-3.0.en.html";
             resolve(licenseBadge, licenseText);
         } else {
@@ -95,7 +95,6 @@ function writeToFile(fileName, data) {
     const licenseText = "";
     generateLicense(data)
         .then(function (data) {
-            console.log("got license");
         })
         .catch(function (err) {
             console.log(err);
