@@ -1,6 +1,7 @@
 // indicate npm modules needed for code base.
-var inquirer = require("inquirer");
-var fs = require('fs');
+const inquirer = require("inquirer");
+const fs = require('fs');
+const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -69,17 +70,49 @@ const fileName = "README.md";
 const defaultMessage = "You will need to come back to this later for a professional looking README.md!";
 
 // const to store license choice results
-let userLicenseChoice = "";
-let licenseText = "";
+
+function generateLicense(data) {
+    return new Promise(function (resolve, reject) {
+        if (data.license === "MIT") {
+            licenseBadge = "https://img.shields.io/badge/license-MIT-brightgreen";
+            licenseText = "";
+            resolve(licenseBadge, licenseText);
+        } else if (data.license === "Apache-2.0") {
+            licenseBadge = "https://img.shields.io/badge/license-Apache-2.0-brightgreen";
+            licenseText = "";
+            resolve(licenseBadge, licenseText);
+        } else if (data.license === "GNU GPLv3") {
+            licenseBadge = "https://img.shields.io/badge/license-GNU GPLv3-brightgreen";
+            licenseText = "";
+            resolve(licenseBadge, licenseText);
+        } else if (data.license === "GNU AGPLv3") {
+            licenseBadge = "https://img.shields.io/badge/license-GNU AGPLv3-brightgreen";
+            licenseText = "";
+            resolve(licenseBadge, licenseText);
+        } else {
+            return reject(err);
+        };
+
+    })
+};
 
 
 // function to write README file
 function writeToFile(fileName, data) {
-    const markDownContent = generateMarkdown(data);
-    fs.writeFile(fileName, markDownContent, (err) => {
-        if (err) throw err;
-        console.log("File has been saved!");
-    });
+    const licenseBadge = "";
+    const licenseText = "";
+    generateLicense(data)
+        .then(function (data) {
+            console.log("got license");
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
+        const markDownContent = generateMarkdown(data);
+        fs.writeFile(fileName, markDownContent, (err) => {
+            if (err) throw err;
+            console.log("File has been saved!");
+        });
 };
 
 // function to initialize program
@@ -88,7 +121,7 @@ function init() {
         .prompt(questions)
         .then(function (data) {
             writeToFile("README.md", data);
-        });
+});
 };
 
 // function call to initialize program

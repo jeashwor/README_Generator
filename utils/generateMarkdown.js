@@ -2,6 +2,8 @@
 function generateMarkdown(data) {
   return `# ${data.title}
 
+[license badge](${licenseBadge})
+
 ${data.description}
   
 *place screen shot here*
