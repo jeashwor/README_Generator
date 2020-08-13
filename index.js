@@ -1,7 +1,6 @@
 // indicate npm modules needed for code base.
 const inquirer = require("inquirer");
 const fs = require('fs');
-const util = require("util");
 const generateMarkdown = require("./utils/generateMarkdown");
 
 // array of questions for user
@@ -56,12 +55,16 @@ const questions = [
         type: "input",
         name: "userEmail",
         message: "Enter your email address."
-        // Validate correct email format if you have time.
     },
     {
         type: "input",
         name: "screenShot",
         message: "File path for project screen shot. (ex. ./assets/screenshot.png)"
+    },
+    {
+        type: "input",
+        name: "repository",
+        message: "Enter GitHub repository name."
     }
 ]
 

@@ -28,7 +28,7 @@ ${data.usageInfo}
 
 ## License
 
-${licenseText}
+* ${licenseText}
 
 ## Contributing
 
