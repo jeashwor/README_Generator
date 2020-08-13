@@ -1,12 +1,12 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+return `# ${data.title}
 
-[license badge](${licenseBadge})
-
+  
 ${data.description}
   
-*place screen shot here*
+![license badge](${licenseBadge})
+![screen shot](${data.screenShot})
   
 ### Table of Contents
   
@@ -25,11 +25,11 @@ ${data.description}
   
 ### Installation Instructions
 
-* ${data.installInstructions.replace(/, /g, "\n * ")}
+* ${data.installInstructions.replace(/, /g, "\n* ")}
 
 ### Usage Instructions
 
-${data.usageInfo}
+     ${data.usageInfo}
 
 ### License
 
@@ -37,17 +37,17 @@ ${data.usageInfo}
 
 ### Contributing
 
-${data.contributionGuidelines}
+     ${data.contributionGuidelines}
 
 ### Test
 
-* ${data.testInstructions.replace(/, /g, "\n * ")}
+* ${data.testInstructions.replace(/, /g, "\n* ")}
 
 ### Questions
 
-GitHub Username: [${data.userName}](https://github.com/${data.userName})
+     GitHub Username: [${data.userName}](https://github.com/${data.userName})
 
-If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
+     If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
 `;
 }
 
