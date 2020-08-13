@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jeashwor",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "inquirer": "^6.3.1"
   },
@@ -18,5 +18,7 @@
   "bugs": {
     "url": "https://github.com/jeashwor/README_Generator/issues"
   },
-  "homepage": "https://github.com/jeashwor/README_Generator#readme"
+  "homepage": "https://github.com/jeashwor/README_Generator#readme",
+  "devDependencies": {},
+  "keywords": []
 }

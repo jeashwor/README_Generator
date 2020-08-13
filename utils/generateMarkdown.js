@@ -9,46 +9,40 @@ ${data.description}
   
 ![screen shot](${data.screenShot})
   
-### Table of Contents
+## Table of Contents
   
-* [Installation](installation-instructions)
-  
-* [Usage](#usage-instructions)
-  
-* [License](#license)
-  
-* [Contributing](#contributing)
-  
-* [Test](#test-instructions)
-  
+* [Installation](installation-instructions)  
+* [Usage](#usage-instructions)  
+* [License](#license)  
+* [Contributing](#contributing)  
+* [Test](#test-instructions)  
 * [Questions](#questions)
   
-  
-### Installation Instructions
+## Installation Instructions
 
-* ${data.installInstructions.replace(/, /g, "\n* ")}
+* ${data.installInstructions.replace(/- /g, "\n* ")}
 
-### Usage Instructions
+## Usage Instructions
 
-     ${data.usageInfo}
+${data.usageInfo}
 
-### License
+## License
 
-     ${licenseText}
+${licenseText}
 
-### Contributing
+## Contributing
 
-     ${data.contributionGuidelines}
+${data.contributionGuidelines.replace(/- /g, "\n* ")}
 
-### Test
+## Test
 
-* ${data.testInstructions.replace(/, /g, "\n* ")}
+* ${data.testInstructions.replace(/- /g, "\n* ")}
 
-### Questions
+## Questions
 
-     GitHub Username: [${data.userName}](https://github.com/${data.userName})
+GitHub Username: [${data.userName}](https://github.com/${data.userName})
 
-     If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
+If you have additional questions please email me at that following link.  [Email Me!](${data.userEmail})
 `;
 }
 

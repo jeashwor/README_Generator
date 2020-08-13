@@ -19,7 +19,7 @@ const questions = [
     {
         type: "input",
         name: "installInstructions",
-        message: "List instructions for install of this application. (For multiple steps separate statements by commas)",
+        message: "List instructions for install of this application. (For multiple steps separate statements with a - followed by a space '- ')",
     },
     {
         type: "input",
@@ -29,12 +29,12 @@ const questions = [
     {
         type: "input",
         name: "contributionGuidelines",
-        message: "Describe any contribution guidelines necessary for use of your application.",
+        message: "Describe any contribution guidelines necessary for use of your application. (For multiple steps separate statements with a - followed by a space '- ')",
     },
     {
         type: "input",
         name: "testInstructions",
-        message: "List out any test created for this application and how to run them. (For multiple steps separate statements by commas)",
+        message: "List out any test created for this application and how to run them. (For multiple steps separate statements with a - followed by a space '- ')",
     },
     {
         type: "list",
