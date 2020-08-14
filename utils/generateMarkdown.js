@@ -9,7 +9,7 @@ ${data.description}
  
 ## Table of Contents
   
-* [Installation](installation-instructions)  
+* [Installation](#installation-instructions)  
 * [Usage](#usage-instructions)  
 * [License](#license)  
 * [Contributing](#contributing)  
