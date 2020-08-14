@@ -5,7 +5,7 @@
   
 A quick and easy command-line based application that will create a professional README file based on prompted user input.  The ultimate goal in this application is to reduce the time that one would spend structuring a proper README file for their repository, and more time doing the important task of writing code!
   
-![screen shot](./utils/screenshot.png)
+![screen shot](./utils/README_Generator_Run_Through.gif)
 
   
 ## Table of Contents
@@ -44,6 +44,7 @@ A quick and easy command-line based application that will create a professional 
 node index.js
 ```
 * Answer questions that follow to generate new README.md file in the newFile folder in this directory. 
+    * See gif below description for walk through!
 
 
 ## License
